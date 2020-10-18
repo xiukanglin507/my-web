@@ -1,5 +1,6 @@
 body {
-    margin: 60px auto;
+    background-color: #9c3f3f;
+    margin: 60px ;
     width: 70%;
 }
 nav ul {
@@ -10,20 +11,20 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 a {
     text-decoration: none;
     color: #999;
 }
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 2em;
+    line-height: 2em;
+    color: #444444;
 }
 footer {
     border-top: 1px solid #d5d5d5;
