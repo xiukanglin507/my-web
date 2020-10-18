@@ -1,25 +1,29 @@
 body {
-    background-color: #9c3f3f;
+    background-color: #918888;
     margin: 60px ;
     width: 70%;
 }
-nav ul {
+ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 1px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li {
+ul li {
     display: inline;
     margin-right: 30px;
 }
+
 a {
     text-decoration: none;
     color: #999;
 }
+
 h1 {
-    font-size: 5em;
+    font-size: 10em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color:orange;
+    text-align:center;
 }
 p {
     font-size: 2em;
@@ -28,5 +32,5 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 1em;
 }
