@@ -2,21 +2,49 @@
 <html>
 	<head>
     <title>Jason Lin's website</title> 
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#title").click(function(){
+          var h1=$("h1");  
+          h1.animate({left:'100px'},"slow");
+          h1.animate({fontSize:'3em'},"slow");
+        });
+
+        $('#content').click(function(){
+          $("#case").fadeIn();
+        });
+
+        $('#image').click(function(){
+          $("#picture").slideDown("slow");
+        });
+      });
+    </script>
 	</head>
   <body>
       <h1>My world as a oneman band</h1> 
-      <div>
+      <button id='title'>light the world up</button>
+      <button id='content'>show up </button>
+      <button id='image'>browse guitars</button>
+      <div id='case'>
         <p>Hi,my name is Jason Lin,I'm a fingerstyle guitar player, which is a way of performance that use one guitar to imitate the sound of a band.I regard it as a kind of brainstorm, 
         and I enjoy the sound I create with my guitar</p>
       </div>
         <p id='text'><a href="https://sls.weco.net/node/32865">go back to 宅學習</a></p>
-      <ul>  
-        <li id='img1'><img src = "IMG_4959-min.jpg" width="400" height="300"> </li>
-        <li id='img2'><img src ="5c7d2c477c8be7944.jpg_fo742.jpg" width="400" height="300"></li>
-        <li id='img3'><img src ="IMG_9397-compressor.jpg" width="400" height="300"></li>
-        <li id='img4'><img src ="圖片-1-19.png" width="400" height="300"></li>
+      <ul id="picture">  
+        <li ><img src = "IMG_4959-min.jpg" width="400" height="300"> </li>
+        <li ><img src ="5c7d2c477c8be7944.jpg_fo742.jpg" width="400" height="300"></li>
+        <li ><img src ="IMG_9397-compressor.jpg" width="400" height="300"></li>
+        <li ><img src ="圖片-1-19.png" width="400" height="300"></li>
       <ul>
-    
+      
+        <p id='text1'>my favorite guitarists</p>
+      <ul id='guitarist'>
+        <li ><img src = "下载.jpg" width="400" height="300"> Mike Dawes </li>
+        <li ><img src ="下载 (1).jpg" width="400" height="300">Tommy emmanuel</li>
+        <li ><img src ="下载 (2).jpg" width="400" height="300">Petteri Sariola</li>
+        <li ><img src ="下载 (3).jpg" width="400" height="300">Calum Graham</li>
+      </ul>
     <footer>
       <div><a href ="https://space.bilibili.com/452151175">browse my website on bilibili</a></div>
       <div><a href ="https://www.facebook.com/profile.php?id=100021993768607">my facebook</div>
@@ -28,31 +56,39 @@
       margin: 90px ;
       width: 70%;
     }
-    ul {
+    #picture {
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         list-style:upper-alpha;
         font-weight:100;
+        position: relative;
+        display:none;
     }
     ul li {
         display: inline;
         margin-right: 20px;
+        font-family:'Helvetica', 'Arial', 'Sans-Serif';
+        position: relative;
+        text-align: left;
+    }
+
+    img{
+      padding: 5em;
+    }
+
+    #case{
+      display:none;
+      position: relative;
+      background-color:yellowgreen;
     }
 
     #text{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 1em;
     }
-    #img1{
-      padding: 5em;
-    }
-    #img2{
-      padding: 5em;
-    }
-    #img3{
-      padding: 5em;
-    }
-    #img4{
-      padding: 5em;
+
+    #text1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1em;
     }
 
     div{
@@ -66,16 +102,20 @@
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 1.5em;
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         color:orange;
         text-align:justify;
+        position: relative;
     }
+
     p {
-        font-size: 2em;
+        font-size: 2.0em;
+        font-style: oblique;
         line-height: 2em;
         color: #444444;
     }
+
     footer {
         border-top: 1px solid #d5d5d5;
         font-size: 1.5em;
@@ -84,3 +124,4 @@
 </style>
 </html>
       
+
