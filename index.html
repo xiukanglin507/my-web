@@ -8,7 +8,7 @@
         $("#title").click(function(){
           var h1=$("h1");  
           h1.animate({left:'100px'},"slow");
-          h1.animate({fontSize:'3em'},"slow");
+          h1.animate({fontSize:'4em'},"slow");
         });
 
         $('#content').click(function(){
@@ -32,7 +32,7 @@
       </div>
         <p id='text'><a href="https://sls.weco.net/node/32865">go back to 宅學習</a></p>
       <ul id="picture">  
-        <li ><img src = "IMG_4959-min.jpg" width="400" height="300"> </li>
+        <li ><img src = "IMG_4959-min.jpg" width="400" height="300"></li>
         <li ><img src ="5c7d2c477c8be7944.jpg_fo742.jpg" width="400" height="300"></li>
         <li ><img src ="IMG_9397-compressor.jpg" width="400" height="300"></li>
         <li ><img src ="圖片-1-19.png" width="400" height="300"></li>
@@ -41,9 +41,18 @@
         <p id='text1'>my favorite guitarists</p>
       <ul id='guitarist'>
         <li ><img src = "下载.jpg" width="400" height="300"> Mike Dawes </li>
+        <p> He perform in a percussive style, making every possible sound in guitar, also specialized in effector equipments. 
+             Masterpiece: Overload, Boogie shred, somewhere home.</p>
         <li ><img src ="下载 (1).jpg" width="400" height="300">Tommy emmanuel</li>
+        <p> He perform in a traditional style, he is a certificated guitar player.
+             Masterpiece: guitar boogie, somewhere over the rainbow.
+        </p>
         <li ><img src ="下载 (2).jpg" width="400" height="300">Petteri Sariola</li>
+        <p> He is called the guitar drummer, good at groovy playing and create slam technique.
+             Masterpiece:sanfrancisco drive</p>
         <li ><img src ="下载 (3).jpg" width="400" height="300">Calum Graham</li>
+        <p> He is good at tapping and is considered inheritate of Michael Hegdes,who was called the god of acoustic guitar.
+             Masterpiece:The nomad, Waiting</p>
       </ul>
     <footer>
       <div><a href ="https://space.bilibili.com/452151175">browse my website on bilibili</a></div>
@@ -52,10 +61,14 @@
   </body>
   <style>
     body {
-      background-color: #918888;
-      margin: 90px ;
-      width: 70%;
+      background-image: url(image.jpg);
+      background-position:  right top;
+      background-size:600px 400px;
+      background-repeat:no-repeat;
+      margin: 60px ;
+      width: 60%;
     }
+
     #picture {
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         list-style:upper-alpha;
@@ -63,22 +76,27 @@
         position: relative;
         display:none;
     }
+
     ul li {
-        display: inline;
         margin-right: 20px;
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         position: relative;
         text-align: left;
+        font-size: 1.5em;
     }
 
     img{
+      border: black;
       padding: 5em;
+      text-emphasis: size;
+      text-align: center;
+      text-decoration-style:dotted;
     }
 
     #case{
       display:none;
       position: relative;
-      background-color:yellowgreen;
+      background-color: aqua;
     }
 
     #text{
@@ -88,7 +106,7 @@
 
     #text1{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 1em;
+      font-size: 2em;
     }
 
     div{
@@ -102,7 +120,9 @@
     }
 
     h1 {
-        font-size: 1.5em;
+      background-color: rgb(119, 158, 231);
+        border-bottom: black;
+        font-size: 2em;
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
         color:orange;
         text-align:justify;
@@ -116,8 +136,7 @@
         color: #444444;
     }
 
-    footer {
-        border-top: 1px solid #d5d5d5;
+    footer {       
         font-size: 1.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
